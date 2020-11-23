@@ -17,6 +17,7 @@ body {
   padding: 0;
   font-family: 'Lato', sans-serif;
   background: #f3f2f7;
+  min-width: 350px;
 }
 
 img {
@@ -767,5 +768,12 @@ nav .nav-btn:hover {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+  }
+}
+
+/* Desktop xl */
+@media (min-width: 1500px) {
+  #hero {
+    background-position: 50% 75%;
   }
 }
