@@ -372,6 +372,10 @@ nav .nav-btn:hover {
   text-align: center;
 }
 
+.about-footer-text-span {
+  color: #f59e0b;
+}
+
 .about-footer-btn {
   display: inline-block;
   padding: 15px 25px;
@@ -386,7 +390,7 @@ nav .nav-btn:hover {
 }
 
 .about-footer-btn:hover {
-  background-color: #2c6394;
+  background-color: #f59e0b;
   color: white;
 }
 
