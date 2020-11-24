@@ -4,6 +4,8 @@
 
 A landing page for the Happy Pets pet sitting service written in html, css, and vanilla javascript.
 
+View live project: https://happypetslandingpage.netlify.app/
+
 ### Features
 
 - Responsive design
