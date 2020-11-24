@@ -453,7 +453,7 @@ nav .nav-btn:hover {
 }
 
 .btn-project:hover {
-  background-color: #5e8cb6;
+  background-color: #f59e0b;
 }
 
 .services-title-wrapper {
@@ -524,13 +524,18 @@ nav .nav-btn:hover {
 }
 
 /* ===============
-  Partners Section
+  Testimonials Section
 ==================*/
-#partners {
+#testimonials {
   margin-bottom: 7em;
 }
 
-.partners-header {
+.fa-quote-left,
+.fa-quote-right {
+  color: #f59e0b;
+}
+
+.testimonials-header {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -538,12 +543,32 @@ nav .nav-btn:hover {
   text-align: center;
 }
 
-.partners-images-wrapper {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-gap: 15px;
+.testimonials-header-text {
+  margin-bottom: 4em;
 }
 
+.fa-heart {
+  color: #f59e0b;
+}
+
+.testimonials-wrapper {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 50px;
+}
+
+.testimonial-card {
+  text-align: center;
+}
+
+.testimonial-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-position: center;
+}
 /* ===============
   Get Started Section
 ==================*/
@@ -647,7 +672,7 @@ nav .nav-btn:hover {
   filter: grayscale(1);
 }
 /* ===========
- Media Query
+  Media Query
 ==============*/
 
 /* Tablet View */
@@ -673,13 +698,6 @@ nav .nav-btn:hover {
     display: flex;
     align-content: center;
     justify-content: space-between;
-  }
-
-  .partners-images-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-gap: 15px;
   }
 
   .footer-items-wrapper {
@@ -751,12 +769,11 @@ nav .nav-btn:hover {
     grid-column-gap: 5%;
   }
 
-  /* Partners Section */
-  .partners-images-wrapper {
+  /* Testimonials Section */
+  .testimonials-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
   }
 
   /* Footer Section */
@@ -779,5 +796,10 @@ nav .nav-btn:hover {
 @media (min-width: 1500px) {
   #hero {
     background-position: 50% 75%;
+  }
+
+  .testimonials-wrapper {
+    display: grid;
+    grid-gap: 100px;
   }
 }
