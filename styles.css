@@ -253,11 +253,13 @@ nav .nav-btn:hover {
   text-decoration: none;
   transition: 0.5s ease all;
 }
-.scroll-up a::after {
-  content: '︿';
-  font-size: 1.5em;
+
+.fa-chevron-up {
+  margin-left: 50%;
+  margin-top: 50%;
+  transform: translate(-50%, -50%);
   color: white;
-  padding-left: 0.3em;
+  font-size: 1.5rem;
 }
 
 .scroll-up a.active {
@@ -561,6 +563,10 @@ nav .nav-btn:hover {
 
 .testimonial-card {
   text-align: center;
+  padding: 1em;
+  background: white;
+  border-radius: 10px;
+  border: 1px solid #f59e0b;
 }
 
 .testimonial-img {
@@ -653,11 +659,15 @@ nav .nav-btn:hover {
 }
 
 #footer .fab {
-  color: var(--dark-blue);
+  color: #282b2c;
   background: white;
   padding: 10px;
   margin: 0 5px;
   border-radius: 5px;
+}
+
+#footer .fab:hover {
+  color: #f59e0b;
 }
 
 .footer-social-links {
@@ -668,9 +678,6 @@ nav .nav-btn:hover {
   transition: 0.3s ease all;
 }
 
-.footer-social-links a:hover {
-  filter: grayscale(1);
-}
 /* ===========
   Media Query
 ==============*/
